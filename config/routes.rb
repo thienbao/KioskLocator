@@ -1,4 +1,20 @@
 KioskLocator::Application.routes.draw do
+  get "kiosk/index"
+
+  get "kiosk/show"
+
+  get "kiosk/new"
+
+  get "kiosk/edit"
+
+  post "kiosk/create"
+
+  post "kiosk/update"
+
+  get "kiosk/destroy"
+
+	get "kiosk/search"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

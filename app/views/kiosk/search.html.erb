@@ -1,0 +1,6 @@
+<h1> Enter source location </h1>
+<% form_tag('/kiosk/search',:method => 'post') do %>
+	<%= text_field_tag 'location', @location.compact.join(',') %>
+	<%= select_tag 'radius', options_for_select({'5 miles' => 5, '10 miles' => 10, '15 miles' => 15},5) %>
+	<%= submit_tag 'find' %>
+<% end %> 
